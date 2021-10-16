@@ -73,23 +73,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+if ($_SERVER['HTTP_HOST']=='localhost') {
+	$server = 'localhost';
+	$username = 'root';
+	$password = '';
+	$database = 'fintechc_lms';
+}else{
+	$server = 'localhost';
+	$username = 'fintechc_lms';
+	$password = 'zD^I%wp9v(vj';
+	$database = 'fintechc_lms';
+}
+
 $db['default'] = array(
 	'dsn'	=> '',
-	// 'hostname' => '92.204.132.135',
-	// 'username' => 'fintechc_fintechcloudlac',
-	// 'password' => 'Mft)&Ze&&Xy4',
-	// 'database' => 'fintechc_lac',   // fintechcloud.in/lac
-
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'fintechc_lms',   // flocalhost
-
-	// 'hostname' => '65.1.228.77',
-	// 'username' => 'fintechc_lms',
-	// 'password' => ']O3~#a=UoXAZ',
-	// 'database' => 'fintechc_lms',
-    
+	'hostname' => $server,
+	'username' => $username,
+	'password' => $password,
+	'database' => $database,   // localhost
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'active_r' => TRUE,
@@ -106,51 +107,5 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 ); 
-
-// $db['FTCDatabase'] = array(
-// 	'dsn'	=> '',
-//     'hostname' => '92.204.132.135',
-// 	'username' => 'fintechc_vin',
-// 	'password' => 'zT1@{O3s(0Ha',
-// 	'database' => 'fintechc_ftc_vincrm',  //payday loan  fintechcloud.in
-// 	'dbdriver' => 'mysqli',
-// 	'dbprefix' => '',
-// 	'active_r' => TRUE,
-// 	'pconnect' => FALSE,
-// 	'db_debug' => (ENVIRONMENT !== 'production'),
-// 	'cache_on' => FALSE,
-// 	'cachedir' => '',
-// 	'char_set' => 'utf8',
-// 	'dbcollat' => 'utf8_general_ci',
-// 	'swap_pre' => '',
-// 	'encrypt' => FALSE,
-// 	'compress' => FALSE,
-// 	'stricton' => FALSE,
-// 	'failover' => array(),
-// 	'save_queries' => TRUE
-// );
-
-// $db['LWDatabase'] = array(
-// 	'dsn'	=> '',
-//     'hostname' => '119.18.62.101',
-//     'username' => 'loanwiuz_loanwal',
-//     'password' => 'Welcome@#$2018',
-//     'database' => 'loanwiuz_loanwalle',  // old loanwalle.com or zadmin
-// 	'dbdriver' => 'mysqli',
-// 	'dbprefix' => '',
-// 	'active_r' => TRUE,
-// 	'pconnect' => FALSE,
-// 	'db_debug' => (ENVIRONMENT !== 'production'),
-// 	'cache_on' => FALSE,
-// 	'cachedir' => '',
-// 	'char_set' => 'utf8',
-// 	'dbcollat' => 'utf8_general_ci',
-// 	'swap_pre' => '',
-// 	'encrypt' => FALSE,
-// 	'compress' => FALSE,
-// 	'stricton' => FALSE,
-// 	'failover' => array(),
-// 	'save_queries' => TRUE
-// );
 
 

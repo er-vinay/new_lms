@@ -4693,3 +4693,184 @@ INFO - 2021-10-16 12:56:03 --> File loaded: E:\VIN\xampp\htdocs\2021\LMS\applica
 INFO - 2021-10-16 12:56:03 --> File loaded: E:\VIN\xampp\htdocs\2021\LMS\application\views\Tasks/main_js.php
 INFO - 2021-10-16 12:56:03 --> Final output sent to browser
 DEBUG - 2021-10-16 12:56:03 --> Total execution time: 0.0622
+INFO - 2021-10-16 14:36:54 --> Config Class Initialized
+INFO - 2021-10-16 14:36:54 --> Hooks Class Initialized
+DEBUG - 2021-10-16 14:36:54 --> UTF-8 Support Enabled
+INFO - 2021-10-16 14:36:54 --> Utf8 Class Initialized
+INFO - 2021-10-16 14:36:54 --> URI Class Initialized
+DEBUG - 2021-10-16 14:36:54 --> No URI present. Default controller set.
+INFO - 2021-10-16 14:36:54 --> Router Class Initialized
+INFO - 2021-10-16 14:36:54 --> Output Class Initialized
+INFO - 2021-10-16 14:36:54 --> Security Class Initialized
+DEBUG - 2021-10-16 14:36:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 14:36:54 --> CSRF cookie sent
+INFO - 2021-10-16 14:36:54 --> Input Class Initialized
+INFO - 2021-10-16 14:36:54 --> Language Class Initialized
+INFO - 2021-10-16 14:36:54 --> Loader Class Initialized
+INFO - 2021-10-16 14:36:54 --> Helper loaded: url_helper
+INFO - 2021-10-16 14:36:54 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 14:36:54 --> Helper loaded: form_helper
+INFO - 2021-10-16 14:36:54 --> Helper loaded: file_helper
+INFO - 2021-10-16 14:36:54 --> Helper loaded: download_helper
+INFO - 2021-10-16 14:36:54 --> Helper loaded: date_helper
+INFO - 2021-10-16 14:36:54 --> Helper loaded: security_helper
+INFO - 2021-10-16 14:36:54 --> Helper loaded: option_helper
+INFO - 2021-10-16 14:36:54 --> Database Driver Class Initialized
+ERROR - 2021-10-16 14:36:54 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'fintechc_lms'@'localhost' (using password: YES) E:\VIN\xampp\htdocs\2021\new_lms\system\database\drivers\mysqli\mysqli_driver.php 203
+ERROR - 2021-10-16 14:36:54 --> Unable to connect to the database
+INFO - 2021-10-16 14:36:54 --> Language file loaded: language/english/db_lang.php
+INFO - 2021-10-16 14:42:30 --> Config Class Initialized
+INFO - 2021-10-16 14:42:30 --> Hooks Class Initialized
+DEBUG - 2021-10-16 14:42:30 --> UTF-8 Support Enabled
+INFO - 2021-10-16 14:42:30 --> Utf8 Class Initialized
+INFO - 2021-10-16 14:42:30 --> URI Class Initialized
+DEBUG - 2021-10-16 14:42:30 --> No URI present. Default controller set.
+INFO - 2021-10-16 14:42:30 --> Router Class Initialized
+INFO - 2021-10-16 14:42:30 --> Output Class Initialized
+INFO - 2021-10-16 14:42:30 --> Security Class Initialized
+DEBUG - 2021-10-16 14:42:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 14:42:30 --> CSRF cookie sent
+INFO - 2021-10-16 14:42:30 --> Input Class Initialized
+INFO - 2021-10-16 14:42:30 --> Language Class Initialized
+INFO - 2021-10-16 14:42:30 --> Loader Class Initialized
+INFO - 2021-10-16 14:42:30 --> Helper loaded: url_helper
+INFO - 2021-10-16 14:42:30 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 14:42:30 --> Helper loaded: form_helper
+INFO - 2021-10-16 14:42:30 --> Helper loaded: file_helper
+INFO - 2021-10-16 14:42:30 --> Helper loaded: download_helper
+INFO - 2021-10-16 14:42:30 --> Helper loaded: date_helper
+INFO - 2021-10-16 14:42:30 --> Helper loaded: security_helper
+INFO - 2021-10-16 14:42:30 --> Helper loaded: option_helper
+ERROR - 2021-10-16 14:42:30 --> Severity: error --> Exception: syntax error, unexpected token "public", expecting end of file E:\VIN\xampp\htdocs\2021\new_lms\application\config\database.php 76
+INFO - 2021-10-16 14:42:54 --> Config Class Initialized
+INFO - 2021-10-16 14:42:54 --> Hooks Class Initialized
+DEBUG - 2021-10-16 14:42:54 --> UTF-8 Support Enabled
+INFO - 2021-10-16 14:42:54 --> Utf8 Class Initialized
+INFO - 2021-10-16 14:42:54 --> URI Class Initialized
+DEBUG - 2021-10-16 14:42:54 --> No URI present. Default controller set.
+INFO - 2021-10-16 14:42:54 --> Router Class Initialized
+INFO - 2021-10-16 14:42:54 --> Output Class Initialized
+INFO - 2021-10-16 14:42:54 --> Security Class Initialized
+DEBUG - 2021-10-16 14:42:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 14:42:54 --> CSRF cookie sent
+INFO - 2021-10-16 14:42:54 --> Input Class Initialized
+INFO - 2021-10-16 14:42:54 --> Language Class Initialized
+INFO - 2021-10-16 14:42:54 --> Loader Class Initialized
+INFO - 2021-10-16 14:42:54 --> Helper loaded: url_helper
+INFO - 2021-10-16 14:42:54 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 14:42:54 --> Helper loaded: form_helper
+INFO - 2021-10-16 14:42:54 --> Helper loaded: file_helper
+INFO - 2021-10-16 14:42:54 --> Helper loaded: download_helper
+INFO - 2021-10-16 14:42:54 --> Helper loaded: date_helper
+INFO - 2021-10-16 14:42:54 --> Helper loaded: security_helper
+INFO - 2021-10-16 14:42:54 --> Helper loaded: option_helper
+ERROR - 2021-10-16 14:42:54 --> Severity: error --> Exception: syntax error, unexpected token "public", expecting end of file E:\VIN\xampp\htdocs\2021\new_lms\application\config\database.php 76
+INFO - 2021-10-16 14:43:35 --> Config Class Initialized
+INFO - 2021-10-16 14:43:35 --> Hooks Class Initialized
+DEBUG - 2021-10-16 14:43:35 --> UTF-8 Support Enabled
+INFO - 2021-10-16 14:43:35 --> Utf8 Class Initialized
+INFO - 2021-10-16 14:43:35 --> URI Class Initialized
+DEBUG - 2021-10-16 14:43:35 --> No URI present. Default controller set.
+INFO - 2021-10-16 14:43:35 --> Router Class Initialized
+INFO - 2021-10-16 14:43:35 --> Output Class Initialized
+INFO - 2021-10-16 14:43:35 --> Security Class Initialized
+DEBUG - 2021-10-16 14:43:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 14:43:35 --> CSRF cookie sent
+INFO - 2021-10-16 14:43:35 --> Input Class Initialized
+INFO - 2021-10-16 14:43:35 --> Language Class Initialized
+INFO - 2021-10-16 14:43:35 --> Loader Class Initialized
+INFO - 2021-10-16 14:43:35 --> Helper loaded: url_helper
+INFO - 2021-10-16 14:43:35 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 14:43:35 --> Helper loaded: form_helper
+INFO - 2021-10-16 14:43:35 --> Helper loaded: file_helper
+INFO - 2021-10-16 14:43:35 --> Helper loaded: download_helper
+INFO - 2021-10-16 14:43:35 --> Helper loaded: date_helper
+INFO - 2021-10-16 14:43:35 --> Helper loaded: security_helper
+INFO - 2021-10-16 14:43:35 --> Helper loaded: option_helper
+ERROR - 2021-10-16 14:43:35 --> Severity: error --> Exception: Using $this when not in object context E:\VIN\xampp\htdocs\2021\new_lms\application\config\database.php 82
+INFO - 2021-10-16 14:44:10 --> Config Class Initialized
+INFO - 2021-10-16 14:44:10 --> Hooks Class Initialized
+DEBUG - 2021-10-16 14:44:10 --> UTF-8 Support Enabled
+INFO - 2021-10-16 14:44:10 --> Utf8 Class Initialized
+INFO - 2021-10-16 14:44:10 --> URI Class Initialized
+DEBUG - 2021-10-16 14:44:10 --> No URI present. Default controller set.
+INFO - 2021-10-16 14:44:10 --> Router Class Initialized
+INFO - 2021-10-16 14:44:10 --> Output Class Initialized
+INFO - 2021-10-16 14:44:10 --> Security Class Initialized
+DEBUG - 2021-10-16 14:44:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 14:44:10 --> CSRF cookie sent
+INFO - 2021-10-16 14:44:10 --> Input Class Initialized
+INFO - 2021-10-16 14:44:10 --> Language Class Initialized
+INFO - 2021-10-16 14:44:10 --> Loader Class Initialized
+INFO - 2021-10-16 14:44:10 --> Helper loaded: url_helper
+INFO - 2021-10-16 14:44:10 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 14:44:10 --> Helper loaded: form_helper
+INFO - 2021-10-16 14:44:10 --> Helper loaded: file_helper
+INFO - 2021-10-16 14:44:10 --> Helper loaded: download_helper
+INFO - 2021-10-16 14:44:10 --> Helper loaded: date_helper
+INFO - 2021-10-16 14:44:10 --> Helper loaded: security_helper
+INFO - 2021-10-16 14:44:10 --> Helper loaded: option_helper
+ERROR - 2021-10-16 14:44:10 --> Severity: error --> Exception: Using $this when not in object context E:\VIN\xampp\htdocs\2021\new_lms\application\config\database.php 90
+INFO - 2021-10-16 14:44:26 --> Config Class Initialized
+INFO - 2021-10-16 14:44:26 --> Hooks Class Initialized
+DEBUG - 2021-10-16 14:44:26 --> UTF-8 Support Enabled
+INFO - 2021-10-16 14:44:26 --> Utf8 Class Initialized
+INFO - 2021-10-16 14:44:26 --> URI Class Initialized
+DEBUG - 2021-10-16 14:44:26 --> No URI present. Default controller set.
+INFO - 2021-10-16 14:44:26 --> Router Class Initialized
+INFO - 2021-10-16 14:44:26 --> Output Class Initialized
+INFO - 2021-10-16 14:44:26 --> Security Class Initialized
+DEBUG - 2021-10-16 14:44:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 14:44:26 --> CSRF cookie sent
+INFO - 2021-10-16 14:44:26 --> Input Class Initialized
+INFO - 2021-10-16 14:44:26 --> Language Class Initialized
+INFO - 2021-10-16 14:44:26 --> Loader Class Initialized
+INFO - 2021-10-16 14:44:26 --> Helper loaded: url_helper
+INFO - 2021-10-16 14:44:26 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 14:44:26 --> Helper loaded: form_helper
+INFO - 2021-10-16 14:44:26 --> Helper loaded: file_helper
+INFO - 2021-10-16 14:44:26 --> Helper loaded: download_helper
+INFO - 2021-10-16 14:44:26 --> Helper loaded: date_helper
+INFO - 2021-10-16 14:44:26 --> Helper loaded: security_helper
+INFO - 2021-10-16 14:44:26 --> Helper loaded: option_helper
+INFO - 2021-10-16 14:44:26 --> Database Driver Class Initialized
+DEBUG - 2021-10-16 14:44:26 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-10-16 14:44:26 --> Session: Class initialized using 'files' driver.
+INFO - 2021-10-16 14:44:26 --> Form Validation Class Initialized
+INFO - 2021-10-16 14:44:26 --> Upload Class Initialized
+INFO - 2021-10-16 14:44:26 --> Parser Class Initialized
+INFO - 2021-10-16 14:44:26 --> Email Class Initialized
+DEBUG - 2021-10-16 14:44:26 --> Encrypt Class Initialized
+INFO - 2021-10-16 14:44:26 --> Table Class Initialized
+INFO - 2021-10-16 14:44:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-10-16 14:44:26 --> Pagination Class Initialized
+INFO - 2021-10-16 14:44:26 --> Model "Leadmod" initialized
+INFO - 2021-10-16 14:44:26 --> Controller Class Initialized
+INFO - 2021-10-16 14:44:26 --> Model "Admin_Model" initialized
+ERROR - 2021-10-16 18:14:26 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 16
+ERROR - 2021-10-16 18:14:26 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 16
+ERROR - 2021-10-16 18:14:26 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 17
+ERROR - 2021-10-16 18:14:26 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 17
+ERROR - 2021-10-16 18:14:26 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 18
+ERROR - 2021-10-16 18:14:26 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 18
+ERROR - 2021-10-16 18:14:26 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 19
+ERROR - 2021-10-16 18:14:26 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 19
+INFO - 2021-10-16 18:14:26 --> Model "Task_Model" initialized
+INFO - 2021-10-16 18:14:26 --> Model "Menu_Model" initialized
+INFO - 2021-10-16 18:14:26 --> Model "User_Model" initialized
+INFO - 2021-10-16 18:14:26 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\login.php
+INFO - 2021-10-16 18:14:26 --> Final output sent to browser
+DEBUG - 2021-10-16 18:14:26 --> Total execution time: 0.0389
+INFO - 2021-10-16 14:44:26 --> Config Class Initialized
+INFO - 2021-10-16 14:44:26 --> Hooks Class Initialized
+DEBUG - 2021-10-16 14:44:26 --> UTF-8 Support Enabled
+INFO - 2021-10-16 14:44:26 --> Utf8 Class Initialized
+INFO - 2021-10-16 14:44:26 --> URI Class Initialized
+INFO - 2021-10-16 14:44:26 --> Router Class Initialized
+INFO - 2021-10-16 14:44:26 --> Output Class Initialized
+INFO - 2021-10-16 14:44:26 --> Security Class Initialized
+DEBUG - 2021-10-16 14:44:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 14:44:26 --> CSRF cookie sent
+INFO - 2021-10-16 14:44:26 --> Input Class Initialized
+INFO - 2021-10-16 14:44:26 --> Language Class Initialized
+ERROR - 2021-10-16 14:44:26 --> 404 Page Not Found: Public/front

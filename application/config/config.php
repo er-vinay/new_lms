@@ -24,12 +24,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-// $config['base_url'] = 'https://fintechcloud.in/lms';
-// $config['base_url'] = 'http://localhost/2021/LMS/';
 if ($_SERVER['HTTP_HOST']=='localhost') {
-	$config['base_url']    = ''.$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/2021/LMS/';
-}
-else{
+	$config['base_url']    = ''.$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/2021/new_lms/';
+}else{
     $config['base_url']    = ''.$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/lms/';
 }
 
