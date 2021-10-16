@@ -1,0 +1,141 @@
+@page {
+    /*size: auto;    auto is the initial value */
+    /*margin: 0%;*/
+}
+
+h1{ font-size:40px; font-family:'Cambria'; color:#000;}
+h2{ font-size:22px; font-family: 'Roboto', sans-serif; font-style:italic;}
+h3{ font-size:23px; color:#000; font-family: 'Roboto', sans-serif;}
+h4{ font-size:22px; color:#000; font-family: 'Roboto', sans-serif; font-weight:100;}
+h5{ font-size:54px !important; color:#000; font-family: 'Roboto', sans-serif;}
+p{ font-size:16px; color:#000; font-family: 'Roboto', sans-serif; line-height:30px; text-align:justify;}
+
+@font-face {
+  font-family:'Courier New';
+  src:url(../fonts/courier-new.ttf);
+}
+
+@font-face {
+  font-family:'Cambria';
+  src:url(../fonts/cambria.ttf);
+}
+
+ 
+
+/* ========= warpper ======= */
+
+#wrapper {
+    margin: 0 auto;
+    width: 1332px;
+    height: auto;
+    display: block;
+}
+.container{ margin:0 auto; width:1140px; height:auto;}
+
+
+.box{ margin:0; padding-top:30px; float:left; width:100%; background:url(../images/bg-images.jpg) center no-repeat; height:1070px; background-size:cover;}
+.box .left-box { padding:0; margin:0; width:50%; float:left;}
+.box .left-box .logo{ padding:0; margin:0;}
+.box .right-box { padding:0; margin:0; width:50%; float:left;}
+.box .right-box .content {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+.box .right-box .content h2 {
+    text-align: right;
+    line-height: 18px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.box .h2-content-box {
+    width: 100%;
+    float: left;
+    margin: 240px 0 0 0;
+    padding: 0;
+}
+.box .h2-content-box h3 {
+    font-family: 'Courier New';
+    font-size: 67px;
+    line-height: 10px;
+    font-style: normal;
+    font-weight: 100;
+}
+.box .h2-content-box p{ font-size:22px;}
+
+.box .h2-content-box span{ color:#F00;}
+
+.box .midd-content {
+    padding: 0;
+    margin: 180px 0 0 0;
+    width: 100%;
+    float: left;
+}
+.box .midd-content .left-cont{ padding:0; margin:0; width:50%; float:left;}
+.box .midd-content .left-cont p {
+    font-size: 19px;
+    line-height: 16px;
+}
+.box .midd-content .left-cont span{ color:#F00;}
+
+/*-----  close hadder ---- */
+
+
+/*---------  introduction --------*/
+/*---------------------------------*/
+
+.introduction { padding:0; width:100%; float:left; height:auto;}
+.introduction .cont-left{ padding:0; margin:0; width:60%; float:left;}
+.introduction .cont-right{ padding:0; margin:0; width:40%; float:left;}
+.introduction .center-content{ float:left; width:100%;}
+
+/*---------  about us --------*/
+/*---------------------------------*/
+
+.about-us { padding:0; width:100%; float:left; height:auto;}
+.about-us .cont-left{ padding:0; margin:0; width:70%; float:left;}
+.about-us .cont-right{ padding:0; margin:0; width:30%; float:left;}
+.about-us .center-content{ float:left; width:100%;}
+
+/*---------  permotiona sms --------*/
+/*---------------------------------*/
+
+.Promotional-SMS  { padding:0; width:100%; float:left; height:auto;}
+.Promotional-SMS .cont-left{ padding:0; margin:0; width:50%; float:left;}
+.Promotional-SMS .cont-left p{ line-height:20px;}
+.Promotional-SMS .cont-right{ padding:0; margin:0; width:50%; float:left;}
+.Promotional-SMS .center-content{ float:left; width:100%;}
+.Promotional-SMS i{ font-size:12px;}
+
+/*---------  permotiona sms --------*/
+/*---------------------------------*/
+
+.Proposal  { padding:0; width:100%; float:left; height:auto;}
+.Proposal .cont-left{ padding:0; margin:0; width:80%; float:left;}
+.Proposal .cont-left p{ line-height:30px;}
+.Proposal .cont-right{ padding:0; margin:0; width:20%; float:left;}
+.Proposal .center-content{ float:left; width:100%; margin-top:20px;}
+.Proposal i{ font-size:12px;}
+.Proposal table{ border-color:#afaead;}
+.Proposal th{ background:#ffe499; border:none; font-weight:600; font-size:19px; font-family:Arial, Helvetica, sans-serif; padding:8px;}
+.Proposal td{  border:none; font-weight:100; font-size:17px; font-family:Arial, Helvetica, sans-serif; text-align:center; padding:8px;}
+.Proposal td p {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+.Proposal td  i{ font-size:12px;}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+

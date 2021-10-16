@@ -1,0 +1,1146 @@
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+
+
+
+
+
+
+/* Ace Responsive Menu
+
+
+
+----------------------------------------*/
+
+.logout-lac {padding: 24px 8px 20px 8px;text-decoration: none;font-size: 14px;color: #0d638f;text-decoration: none;border-right: solid 1px #ddd;}
+
+
+
+.logout-lac:hover {
+
+
+
+color: #000;
+
+
+
+text-decoration: none;
+
+
+
+}
+
+
+
+a {
+
+
+
+text-shadow: none;
+
+
+
+color: #0d638f;
+
+
+
+}
+
+
+
+ul {
+
+
+
+margin: 0px;
+
+
+
+padding: 0px;
+
+
+
+}
+
+
+
+.ace-responsive-menu {
+
+
+
+list-style: none;
+
+
+
+margin: 0;
+
+
+
+padding: 0;
+
+
+
+
+
+
+
+float:left;
+
+
+
+width:100%;
+
+
+
+font-family: 'Roboto', sans-serif;
+
+
+
+/* border-bottom: 3px solid #FD5025; */
+
+
+
+}
+
+
+
+.ace-responsive-menu li{
+
+
+
+list-style: none;
+
+
+
+}
+
+
+
+.ace-responsive-menu li ul {
+
+
+
+display:none;
+
+
+
+}
+
+
+
+.ace-responsive-menu > li {
+
+display: block;
+
+margin: 0;
+
+padding: 0;
+
+border: 0px;
+
+float: left;
+
+}
+
+
+
+.ace-responsive-menu li a {
+
+color: #000;
+
+}
+
+
+
+.ace-responsive-menu > li > a {display: block;position: relative;margin: 0;border: 0px;padding: 18px 14px;text-decoration: none;font-size: 12px;color: #000;}
+
+
+
+
+
+.ace-responsive-menu > li > a:hover {
+
+color: #000  !important;
+
+}
+
+
+
+.ace-responsive-menu li a i {
+
+padding-right: 5px;
+
+color: #6d6d6d;
+
+
+
+}
+
+
+
+.ace-responsive-menu > li > a i {
+
+font-size: 16px;
+
+text-shadow: none;
+
+color: #286ea1;
+
+}
+
+
+
+.ace-responsive-menu li ul.sub-menu li a i {
+
+padding-right: 10px;
+
+}
+
+
+
+.ace-responsive-menu li.menu-active > a {
+
+background: none;
+
+color: #286ea1;
+
+}
+
+
+
+.ace-responsive-menu li .menu-active {
+
+position: relative;
+
+}
+
+
+
+.ace-responsive-menu > li > a > .arrow:before {  
+
+margin-left: 15px;
+
+display: inline;
+
+font-size: 16px;
+
+font-family: FontAwesome;
+
+height: auto;
+
+content: " \276F";
+
+font-weight: 300;
+
+text-shadow: none;
+
+width: 10px;
+
+display: inline-block;
+
+transform: rotate(90deg);
+
+}
+
+
+
+.ace-responsive-menu li ul.sub-menu li > a > .arrow:before {
+
+content: "\f105" !important;
+
+}
+
+.ace-responsive-menu > li > ul.sub-menu {
+
+display: none;
+
+list-style: none;
+
+clear: both;
+
+margin: 0px 0px 0px 0px;
+
+position: absolute;
+
+z-index: 999;
+
+border-top: solid 3px #286ea1 !important;
+
+}
+
+
+
+.ace-responsive-menu li ul.sub-menu {
+
+background: #fff;
+
+box-shadow: 0 0 3px #cacaca;
+
+}
+
+
+
+.ace-responsive-menu li ul.sub-menu > li {
+
+width: 185px;
+
+}
+
+
+
+.ace-responsive-menu li ul.sub-menu li a {
+
+display: block;
+
+margin: 0px 0px;
+
+padding: 12px 20px 12px 15px;
+
+text-decoration: none;
+
+font-size: 12px;
+
+font-weight: normal;
+
+background: none;
+
+border-bottom: solid 1px #ddd;
+
+}
+
+
+
+.ace-responsive-menu li ul.sub-menu li a:hover{
+
+border-bottom: solid 1px #286ea1  !important;
+
+background: #f7f7f7;
+
+color: #286ea1;
+
+}
+
+
+
+.ace-responsive-menu > li > ul.sub-menu > li {
+
+position: relative;
+
+}
+
+
+
+.ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu {
+
+position: absolute;
+
+left: 185px;
+
+top: 0px;
+
+display: none;
+
+list-style: none;
+
+}
+
+
+
+.ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+
+position: absolute;
+
+left: 185px;
+
+top: 0px;
+
+display: none;
+
+list-style: none;
+
+}
+
+
+
+.ace-responsive-menu > li > ul.sub-menu li > a > .arrow:before {
+
+float: right;
+
+margin-top: 1px;
+
+margin-right: 0px;
+
+display: inline;
+
+font-size: 16px;
+
+font-family: FontAwesome;
+
+height: auto;
+
+content: "\f104";
+
+font-weight: 300;
+
+text-shadow: none;
+
+}
+
+
+
+/* Menu Toggle Btn
+
+
+
+----------------------------------------*/
+
+
+
+.menu-toggle {
+
+display: none;
+
+float: left;
+
+width: 100%;
+
+background: none;
+
+border-bottom: solid 0px #ddd !important;
+
+padding-bottom: 6px;
+
+}
+
+
+
+.menu-toggle h3 {
+
+float: left;
+
+color: #FFF;
+
+padding: 0px 10px;
+
+font-weight: 600;
+
+font-size: 16px;
+
+margin: 0px;
+
+}
+
+
+
+.menu-toggle .icon-bar {
+
+
+
+display: block !important;
+
+width: 18px;
+
+height: 2px;
+
+background-color: #F5F5F5 !important;
+
+-webkit-border-radius: 1px;
+
+-moz-border-radius: 1px;
+
+border-radius: 1px;
+
+-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+
+-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+
+box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+
+margin: 3px;
+
+}
+
+
+
+.menu-toggle .icon-bar:hover {
+
+background-color: #F5F5F5 !important;
+
+}
+
+
+
+.menu-toggle #menu-btn {
+
+float: right;
+
+background: #0b6fab;
+
+border: 1px solid #0a425a;
+
+padding: 8px;
+
+border-radius: 5px;
+
+cursor: pointer;
+
+margin: 15px 0px 0px 0px;
+
+}
+
+
+
+
+
+.hide-menu {
+
+display: none;
+
+}
+
+
+
+/* Accordion Menu Styles
+
+
+
+----------------------------------------*/
+
+ul[data-menu-style="accordion"] {
+
+width: 250px;
+
+}
+
+
+
+ul[data-menu-style="accordion"] > li {    
+
+display: block;
+
+margin: 0;
+
+padding: 0;
+
+border: 0px;
+
+float: none !important;
+
+}
+
+
+
+ul[data-menu-style="accordion"] > li:first-child {
+
+border-top: 2px solid #FD5025;
+
+}
+
+
+
+ul[data-menu-style="accordion"] li ul.sub-menu > li {
+
+width: 100%;
+
+}
+
+
+
+ul[data-menu-style="accordion"] > li > a > .arrow:before {
+
+float: right;
+
+content: "\f105";
+
+}
+
+
+
+ul[data-menu-style="accordion"] li.menu-active > a > .arrow:before {
+
+content: "\f107" !important;
+
+}
+
+
+
+ul[data-menu-style="accordion"] > li > ul.sub-menu {
+
+position: static;
+
+}
+
+
+
+ul[data-menu-style="accordion"] > li > a i {
+
+padding-right: 10px;
+
+color: #FF5737;
+
+}
+
+
+
+ul[data-menu-style="accordion"] > li > ul.sub-menu > li ul.sub-menu {
+
+position: static;
+
+}
+
+
+
+ul[data-menu-style="accordion"] > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+
+position: static;
+
+}
+
+
+
+ul[data-menu-style="accordion"] > li {
+
+border-bottom: 1px solid #242424;
+
+}
+
+ul[data-menu-style="accordion"] li a:hover {
+
+background: #272727 !important;
+
+}
+
+ul[data-menu-style="accordion"] ul.sub-menu li.menu-active > a > .arrow:before {
+
+content: "\f107" !important;
+
+}
+
+/* Vertical Menu Styles
+
+----------------------------------------*/
+
+ul[data-menu-style="vertical"] {
+
+width: 200px;
+
+}
+
+ul[data-menu-style="vertical"] > li {
+
+float: none;
+
+}
+
+ul[data-menu-style="vertical"] > li:first-child {
+
+border-top: 2px solid #FD5025;
+
+}
+
+ul[data-menu-style="vertical"] li ul.sub-menu > li {
+
+width: 100%;
+
+}
+
+ul[data-menu-style="vertical"] > li > a > .arrow:before {
+
+float: right;
+
+content: "\f105";
+
+}
+
+ul[data-menu-style="vertical"] > li.menu-active {
+
+position:relative;
+
+}
+
+ul[data-menu-style="vertical"] > li > ul.sub-menu {
+
+position: absolute;
+
+left:200px;
+
+top:0px;
+
+width:200px;
+
+}
+
+ul[data-menu-style="vertical"] > li > a i {
+
+padding-right: 10px;
+
+color: #FF5737;
+
+}
+
+ul[data-menu-style="vertical"]> li > ul.sub-menu > li ul.sub-menu {
+
+position: absolute;
+
+width:200px;
+
+left: 200px;
+
+}
+
+ul[data-menu-style="vertical"] > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+
+position: absolute;
+
+width:200px;
+
+left: 200px;
+
+}
+
+ul[data-menu-style="vertical"] > li {
+
+border-bottom: 1px solid #242424;
+
+}
+
+ul[data-menu-style="vertical"] li a:hover {
+
+background: #272727 !important;
+
+}
+
+/* Responsive Menu Styles
+
+----------------------------------------*/
+
+/*Note: change the max-width asper your requirment and change the same in aceResponsiveMenu({resizeWidth: "768" }) function*/
+
+.top-welcome
+
+{padding-top:16px;float: left;padding-bottom: 18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;/* border-right: solid 1px #ddd; */text-align: center;padding-right: 0px;}
+
+.top_logout
+
+{margin-left: -70px;
+
+margin-right: 64px;}
+
+@media screen and ( min-width:360px) and (max-width: 640px) {
+
+    
+
+        .col-md-2-me {
+
+    width: 49% !important;
+
+    padding: 0px 8px !important;
+
+}
+
+    
+
+.inputFieldsearch {
+
+font-size: 13px !important;
+
+width: 100% !important;
+
+margin-bottom: 10px !important;
+
+padding: 5px !important;
+
+height: 35px !important;
+
+}
+
+.top_logout
+
+{margin-left:0px;
+
+margin-right:0px;}
+
+.labelField {
+
+display: inline-block;
+
+font-weight: 500;
+
+margin-bottom: 5px;
+
+width: 168px !important;
+
+font-size: 13px !important;
+
+margin-top: 10px;
+
+}
+
+.inputField {
+
+font-size: 13px !important;
+
+width: 100% !important;
+
+margin-bottom: 10px !important;
+
+padding: 5px !important;
+
+height: 35px !important;
+
+}
+
+.login-formmea {
+
+width: 100%;
+
+float: left;
+
+padding-top: 0px !important;
+
+}       
+
+button.close {
+
+padding: 7px 12px !important;
+
+}
+
+.top_lac {
+
+padding-right: 32px;
+
+padding-top: 0px;
+
+float: left;
+
+width: 100%;
+
+text-align: center;
+
+margin-top: ;
+
+}
+
+.top_lac img
+
+{
+
+margin: 0 auto !important;
+
+width: 135px;
+
+padding: 6px 0px 0 6px;
+
+position: absolute;
+
+top: -92px;
+
+left: 165px;
+
+}
+
+nav
+
+{z-index:9;
+
+position: absolute;
+
+right:16px;
+
+width:92%;}
+
+.top_naman {
+
+padding-left: 25px;
+
+z-index: 99;
+
+padding-top: 14px;
+
+border-right: solid 0px #ddd;
+
+padding-right: 0;
+
+height: ;
+
+padding-bottom: 17px;
+}
+
+.top-welcome {
+
+padding-top: 18px;
+
+float: left;
+
+padding-bottom: 0px;
+
+white-space: nowrap;
+
+overflow: hidden;
+
+text-overflow: ellipsis;
+
+text-align: center;
+
+width: 100%;
+
+border-bottom: solid 1px #ddd;
+
+margin-bottom: ;
+
+}
+
+.logout-lac {
+
+padding:8px 10px;
+
+font-size: 14px;
+
+color: #0d638f;
+
+float: left;
+
+text-decoration: none;
+
+position: relative;
+
+z-index: 99;
+
+margin-top: -9px;
+
+}
+
+.ace-responsive-menu > li > a {
+
+display: block;
+
+position: relative;
+
+margin: 0;
+
+border: 0px;
+
+padding: 8px 20px 8px 12px !important;
+
+text-decoration: none;
+
+font-size: 14px;
+
+color: #000;
+
+background: #fff !important;
+
+}
+
+.footer-soci
+
+{
+
+text-align:left;
+
+}
+
+.taskPageSizeDashboard 
+
+{
+
+padding:0px 0px;
+
+margin-top: 77px !important;
+
+}
+
+.menu-toggle h3 {
+
+margin: 5px 0px 0px 0px !important;
+
+}
+
+.menu-toggle #menu-btn {
+
+margin:10px 33px 3px 0px !important;
+
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.ace-responsive-menu > li > a {
+
+display: block;
+
+position: relative;
+
+margin: 0;
+
+border: 0px;
+
+padding: 8px 20px 8px 12px !important;
+
+text-decoration: none;
+
+font-size: 11px;
+
+color: #000;
+
+width: 100%;
+border-top: solid 1px #ddd;
+}
+
+.ace-responsive-menu > li > a:hover {
+
+background: #fff !important;
+
+color: #000;
+
+}
+
+.demo {
+
+width:96%;
+
+padding:2%;
+
+}
+
+ul[data-menu-style="vertical"] , ul[data-menu-style="accordion"],
+
+ul[data-menu-style="vertical"] li ul.sub-menu {
+
+width: 100% !important;
+
+} 
+
+.ace-responsive-menu {
+
+float: left;
+
+width:100%;
+
+}
+
+.ace-responsive-menu > li {
+
+border-bottom: 1px solid #ddd;
+
+float: none;
+
+}   
+
+.ace-responsive-menu li a:hover {
+
+background: #ece6e6 !important;
+
+}
+
+.ace-responsive-menu > li:first-child {
+
+border-top: 0px solid #FD5025;
+
+}    
+
+.ace-responsive-menu > li > a i {
+
+padding-right: 5px;
+
+color: #076BA7;
+
+}
+
+.ace-responsive-menu > li > a > .arrow:before {
+
+float: right;
+
+content: " \276F";
+
+font-weight: 300;
+
+text-shadow: none;
+
+width: 10px;
+
+display: inline-block;
+
+transform: rotate(90deg);
+
+}
+
+li.menu-active > a > .arrow:before {
+
+content: " \276F";
+
+font-weight: 300;
+
+text-shadow: none;
+
+width: 10px;
+
+display: inline-block;
+
+transform: rotate(90deg);
+
+}
+
+.ace-responsive-menu li ul.sub-menu > li {
+
+width: 100%;
+
+}
+
+.ace-responsive-menu li ul.sub-menu li ul.sub-menu li a
+
+{
+
+padding-left: 30px;
+
+} 
+
+.ace-responsive-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a 
+
+{
+
+padding-left: 50px;
+
+}  
+
+.ace-responsive-menu > li > ul.sub-menu {
+
+position: static;
+
+}
+
+.ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu {
+
+position: static;
+
+}
+
+.ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+
+position: static;
+
+}
+
+.ace-responsive-menu li ul.sub-menu li.menu-active > a > .arrow:before {
+
+content: " \276F";
+
+font-weight: 300;
+
+text-shadow: none;
+
+width: 10px;
+
+display: inline-block;
+
+transform: rotate(90deg);
+
+}
+
+}

@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media screen and ( min-width:360px) and (max-width: 640px) {
+	
+.top {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+    background: #05145f;
+    height: 138px;
+    text-align: center;
+}
+.footer-social-icons {
+    width: 260px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo-width {
+    width: 100%;
+    float: left;
+    top:0;
+    position: relative;
+}
+.logo {
+    padding: 10px;
+    text-align: center;
+    margin-left: 70px;
+}
+
+.send-2 { margin-left: 60px; }
+#services .box-black {
+    padding-left: 33px;
+    height: 505px;
+    min-height: 345px;
+}
+
+#services ul.nev-g li a {
+    padding: 11px 0 16px 0;
+    font-size: 17px;
+    font-size: 16px;
+    color: #FFF;
+    width: 50%;
+    float: left;
+    border-bottom: 1px solid #3b3939;
+}
+#web-design .welcome-top {
+    margin-left: 0;
+}
+#web-design .right-pandding {
+    padding-right: 7px;
+}
+
+#portfolio {
+    padding: 30px 0 30px 0;
+    margin: 40px 0 0 0;
+    float: left;
+    width: 100%;
+    background: url(../images/bg-images.jpg) center no-repeat;
+    height: 1400px;
+    background-size: cover;
+}
+
+#portfolio .circle {
+    float:none;
+    display:block !important;
+    margin:30px auto !important;
+}
+
+.midd-form .send {
+    width: 100%;
+	
+	
+	}
+.midd-form p{ text-align:center;}	
+.header { text-align:center;}
+.header .call { margin-top:0; font-size:21px;}
+	
+}
+

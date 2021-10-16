@@ -1,0 +1,16 @@
+# HTTPS Rewrite
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# BEGIN WordPress
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+# END WordPress
+
+RewriteCond %{HTTP_HOST} ^https://www.lms.fintechcloud.in [NC]
+RewriteRule ^(.*)$ https://www.lms.fintechcloud.in/$1 [L,R=301]

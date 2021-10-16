@@ -1,0 +1,348 @@
+
+body
+{
+    font: 12px/120% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow: hidden; overflow-y: visible!important;
+}
+				
+*
+{margin:0px;
+padding:0px;
+}
+
+.imag
+{padding:0px;
+margin:0px;
+}
+
+.imag img
+{padding:0px;
+margin:0px;
+width:138px !important;
+height:41px !important;
+}
+
+.facebook-col
+{    border-right: solid 1px #4A6DBB !important;
+    padding-left: 8px !important;}
+
+.facbook-iconn
+{    font-size: 25px !important;
+    padding-top: 5px !important;}
+
+.facebopok-icon
+{
+ 
+background: #304d8d !important;
+    color: #fff !important;
+    padding: 7px !important;
+    border-radius: 4px;
+    font-size: 10px;
+	
+}
+
+.btn-fb-blue-white-bg {
+    margin-right: 4%;
+    padding-left: 47px;
+    border-color: #617ac3;
+    color: #617ac3;
+}
+
+
+.divi-new {
+
+	background:url(../../public/images/bg-1px-grey-divi-437f1a1ff5ca3ab9db09cb43bbfbc380.png); 
+    repeat-x left 9px;
+    text-align: center;
+    height: 16px;
+    padding-bottom: 20px;
+	    margin-top: 10px;
+}
+
+
+.divi-new span {
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: lowercase;
+    padding: 0 10px;
+}
+
+.email-testme
+{    font-size: 15px !important;
+}
+
+.body-background
+{
+width:100%;
+float:left;
+height:auto;
+margin:0px;
+background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    position: relative;
+    display: block;
+    padding-top:40px;
+    padding-bottom: 10px;
+}
+
+.login-formme
+{width:100%;
+height:auto;
+padding:30px;
+margin:0px;
+background:#fff !important;
+    border-radius: 6px;
+    opacity: 0.92;
+color:#444 !important;
+}
+
+.login-text
+{
+text-align: center !important;
+font-size: 27px !important;
+text-transform:capitalize !important;
+padding: 21px 0px 0px 0px !important;
+
+}
+
+.join-link
+{    text-align: right !important;
+font-size:11px !important;
+
+}
+
+.pass-text
+{font-size: 20px !important;
+    color: #8E8B88 !important;}
+
+.socil-link
+{    margin: 6px 0px 10px 0px !important;}
+
+.login-page-ma
+{margin:0px 0px 10px 0px !important;
+}
+
+.form-box-text
+{font-weight:normal !important;
+font-size:16px !important;
+background:#fff !important;
+
+}
+
+
+.orc
+{font-weight:normal !important;
+font-size:25px !important;
+text-align:center !important;
+
+
+}
+
+.orme
+{font-weight:normal !important;
+font-size:16px !important;
+text-align:left !important;
+font-weight:bold !important;
+
+}
+
+
+.phone-icon-me
+{font-weight:normal !important;
+font-size:35px !important;
+text-align:center !important;
+font-weight:bold !important;
+
+}
+
+.login-mobile
+{    padding-top: 3px !important;
+    font-size:17px !important;
+
+	text-align:left;
+	
+}
+
+
+
+.forgot-pas
+{    padding-top:0px !important;
+    font-size: 13px !important;
+	text-align:left;
+	
+}
+
+.forgot-pass-link
+{color:#444 !important;
+font-size:11px !important;
+}
+
+
+.btn-primarya {
+    color: #ffffff;
+    background-color: #00b22d;
+    font-weight: bold !important;
+    border-color: #0096a9;
+    text-transform: uppercase;
+    padding: 10px !important;
+}
+
+.btn-primarya:hover {
+    color: #fff !important;
+    background-color: #00b22d;
+	padding-bottom:10px !important;
+    border-color: #0096a9;
+	  outline: 0 !important;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+	
+.login-mobile
+{    padding-top: 3px !important;
+    font-size: 18px !important;
+
+	text-align:center !important;
+	
+}
+
+.forgot-pas
+{    padding-top: 0px !important;
+    font-size: 17px !important;
+	text-align:center !important;
+	
+}
+
+
+.join-link
+{    text-align: center !important;
+
+}
+
+.imag
+{padding:0px;
+margin:0px;
+}
+
+.imag img
+{padding:0px;
+margin:0px;
+width:141 !important;
+margin-bottom:10px;
+margin-left:35px !important;
+height:41px !important;
+}
+	
+}
+
+
+
+@media only screen and (min-width:360px) and (max-width:640px) {
+	
+.login-mobile
+{    padding-top: 3px !important;
+    font-size: 18px !important;
+	text-align:center !important;
+	
+}
+
+.forgot-pas
+{    padding-top: 0px !important;
+    font-size: 17px !important;
+	text-align:center !important;
+	
+}
+
+
+.join-link
+{    text-align: center !important;
+
+}
+
+
+.imag
+{padding:0px;
+margin:0px;
+}
+
+.imag img
+{padding:0px;
+margin:0px;
+width:141 !important;
+margin-bottom:10px;
+margin-left:55px !important;
+height:41px !important;
+}
+	
+}
+.userLabel{ float: right; }
+.userRow{ margin-top: 10px; margin-right: 25px;}
+/*.form_user { border: 1px solid #000; }*/
+.h2{color: #2e6da4;}
+.userb{color: red;font-size: 18px;}
+
+
+/* textarea editor css file */
+/* ====================== */
+
+.note-editor.note-frame .note-editing-area .note-editable {
+    padding: 10px;
+    overflow: auto;
+    color: #000;
+    background-color: #fff;
+    padding-left: 25px !important;
+}
+
+.active-agent{
+    border: 1px;
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    float: right;
+    border-radius: 45px;
+}
+
+.inactive-agent{
+    border: 1px;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    float: right;
+    border-radius: 45px;
+}
+
+
+.modal-dialog {
+    width: 800px !important;
+    margin: 6% 27% auto !important;
+}
+
+.status-done{
+    border: 1px solid green;
+    background-color: green;
+    color: #fff;
+    height: 38px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 35px;
+}
+.status-pending{
+    border: 1px solid red;
+    background-color: red;
+    color: #fff;
+    height: 38px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.dasboard-lead-box{ height: 180px; color: #000; padding-top: 10px !important; }
+.dasboard-lead-box p{  font-size:18px;}

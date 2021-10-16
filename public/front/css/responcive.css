@@ -1,0 +1,87 @@
+
+@media screen and ( min-width:360px) and (max-width: 640px) {
+
+.widget-block {
+
+padding: 20px;
+
+margin: 10px !important;
+
+float: left !important;
+
+width: 100% !important;
+
+} 
+
+
+
+.collapse {
+
+background-color: #0c70ab !important;
+
+border-color: #0c70ab !important;
+
+}
+
+
+
+.top {
+
+padding: 0;
+
+margin: 0;
+
+float: left;
+
+width: 100%;
+
+background: #F60;
+
+height: 68px;
+
+text-align: center;
+
+}
+
+.logo .logo-width {
+
+width: 100%;
+
+float: left;
+
+top:0;
+
+position: relative;
+
+}
+
+.logo {
+
+padding: 10px;
+
+}
+
+
+
+.send-2 { margin-left: 60px; }
+
+#services .box-black {
+
+padding-left: 33px;
+
+height: 505px;
+
+min-height: 345px;
+
+}
+
+
+
+
+
+}
+
+
+
+
+

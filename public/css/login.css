@@ -1,0 +1,55 @@
+
+*{  margin:0; padding:0;}
+baody{ background:#FFF;}
+
+@font-face{ src:url(../fontes/BlackChancery.ttf); font-family:'BlackChancery';}
+p{ font-family: 'Roboto', sans-serif; font-size:14px; color:#6f7174;}
+
+
+
+#login-form{ padding:0; margin:40px 0 0px 0 ; width:100%; float:left;}
+#login-form .login-form-border{ width:100%; float:left; padding:30px; border:1px solid #dadce0; border-radius:5px;}
+#login-form .login-form-border h3{ text-align:center; font-family: 'Roboto', sans-serif; font-size:24px;}
+#login-form .login-form-border .p2{ font-family: 'Roboto', sans-serif; font-size:16px; text-align:center;} 
+#login-form .login-form-border .form-group { padding:0; margin:0; margin-top:40px;}
+#login-form .login-form-border .input{ height:57px; font-family: 'Roboto', sans-serif;}
+#login-form .login-form-border .text2 {
+    margin-top: 20px;
+    webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight:600;
+    letter-spacing:.25px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: inherit;
+    outline: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#login-form .login-form-border .text3 {
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing:.25px;
+	
+
+}
+#login-form .login-form-border .text4{
+    margin-top:5px;
+    font-size: 15px;
+    font-weight:600;
+	letter-spacing:.25px;
+	
+}
+
+#login-form .login-form-border .row-top {
+    margin-top:30px;
+}
+#login-form .login-form-border .login-top {
+    margin-top: 13px;
+    float: right;
+}
+
