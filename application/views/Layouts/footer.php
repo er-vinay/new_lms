@@ -354,9 +354,9 @@
 
                     autoclose: true,
 
-                    startDate: new Date(),
+                    startDate: '-5d',
 
-                    endDate: '+30d'
+                    endDate: '+2d'
 
                 });
 

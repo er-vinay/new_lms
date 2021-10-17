@@ -1,5 +1,5 @@
     
-    <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S11")) { ?>
+    <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S6" || $leadDetails->stage == "S11")) { ?>
     <form id="insertPersonal" class="form-inline" method="post" enctype="multipart/form-data" style="margin: 10px;">
         <input type="hidden" name="lead_id" id="lead_id" value="<?php echo $leadDetails->lead_id; ?>" />
         <input type="hidden" name="customer_id" id="customer_id" value="<?php echo $leadDetails->customer_id; ?>" />
@@ -91,7 +91,7 @@
     <!------ table for  RESIDENCE section ----------------------->
 
     <div id="RESIDENCE1" class="collapse"> 
-        <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S11")) { ?>
+        <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S6" || $leadDetails->stage == "S11")) { ?>
         <form id="insertResidence" class="form-inline" method="post" enctype="multipart/form-data">
             <input type="hidden" name="lead_id" id="lead_id" value="<?php echo $leadDetails->lead_id; ?>" />
             <input type="hidden" name="customer_id" id="customer_id" value="<?php echo $leadDetails->customer_id; ?>" />
@@ -238,7 +238,7 @@
     </div>
 
     <div id="EMPLOYMENT" class="collapse"> 
-        <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S11")) { ?>
+        <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S6" || $leadDetails->stage == "S11")) { ?>
         <form id="insertEmployment" class="form-inline" method="post" >
             <input type="hidden" name="lead_id" id="lead_id" value="<?php echo $leadDetails->lead_id; ?>" />
             <input type="hidden" name="customer_id" id="customer_id" value="<?php echo $leadDetails->customer_id; ?>" />
@@ -342,7 +342,7 @@
             <button type="button" class="btn btn-info collapse" onclick="getReferenceDetails(<?= $leadDetails->lead_id ?>)"  data-toggle="collapse" data-target="#REFERENCES">REFERENCES&nbsp;<i class="fa fa-angle-double-down"></i></button>
         </h2>
         <div id="REFERENCES" class="collapse"> 
-            <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S11")) { ?>
+            <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S6" || $leadDetails->stage == "S11")) { ?>
             <form id="insertReference" class="form-inline" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="lead_id" id="lead_id" value="<?php echo $leadDetails->lead_id; ?>" />
                 <input type="hidden" name="customer_id" id="customer_id" value="<?php echo $leadDetails->customer_id; ?>" />

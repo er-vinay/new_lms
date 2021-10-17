@@ -802,24 +802,34 @@
 	        $where = ['company_id' => company_id, 'product_id' => product_id];
 	        $status = $this->input->post('status');
 	        $stage = $this->input->post('stage');
+
+	        if(agent == 'CR1'){
+	        	$status = "LEAD-HOLD";
+	        	$stage = "S3";
+	        }
+	        if(agent == 'CR2'){
+	        	$status = "APPLICATION-HOLD";
+	        	$stage = "S6";
+	        }
+
 	        $data1 = [
-	            'status'            => ($status == "LEAD-INPROCESS") ? "LEAD-HOLD" : "APPLICATION-HOLD",
-	            'stage'            	=> ($stage == "S2") ? "S3" : "S6",
+	            'status'            => $status,
+	            'stage'            	=> $stage,
 	        ];
 	        $data2 = [
-	            'customer_id'  		=> $this->input->post('customer_id'), 
 	            'lead_id'  			=> $lead_id, 
+	            'customer_id'  		=> $this->input->post('customer_id'), 
 	            'user_id'       	=> $this->input->post('user_id'),
-	            'status'            => ($status == "LEAD-INPROCESS") ? "LEAD-HOLD" : "APPLICATION-HOLD",
-	            'stage'            	=> ($stage == "S2") ? "S3" : "S6",
+	            'status'            => $status,
+	            'stage'            	=> $stage,
 	            'remarks'   		=> $this->input->post('hold_remark'),
-	            'scheduled_date'    => $this->input->post('hold_date'),
+	            'scheduled_date'    => date('d-m-Y h:i:sa' ,strtotime($this->input->post('hold_date'))),
 	            'created_on'    	=> timestamp,
 	        ];
 	        
 	        $conditions = ['lead_id' => $lead_id];
-            $this->Tasks->updateLeads($conditions, $data1, $this->leads);  
-            $this->Tasks->insert($data2, $this->tbl_lead_followup);  
+            $this->Tasks->updateLeads($conditions, $data1, 'leads');  
+            $this->Tasks->insert($data2, 'lead_followup');  
 	        $data['msg'] = 'Application Hold Successfuly.';
 	        echo json_encode($data);
 	    }

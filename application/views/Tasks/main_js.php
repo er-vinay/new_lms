@@ -273,7 +273,7 @@
                     } else if(response.msg){
                         $('#reson').empty();
                         catchSuccess(response.msg);
-                        window.location.href = "<?= base_url('applicationinprocess/S5') ?>";
+                        history.back(1);
                     }else{
                         catchError(response.err);
                     }
@@ -296,8 +296,8 @@
     {
         var hold_remark = $("#hold_remark").val();
         var hold_date = $("#holdDurationDate").val();
-        var status = $("#status").val();
-        var stage = $("#stage").val();
+        // var status = $("#status").val();
+        // var stage = $("#stage").val();
         var user_id = $("#user_id").val();
         var customer_id = $("#customer_id").val();
         if(hold_remark == "" && hold_date == ""){
@@ -307,13 +307,13 @@
             $.ajax({
                 url : '<?= base_url("saveHoldleads/") ?>' + lead_id,
                 type : 'POST',
-                data: {hold_remark : hold_remark, hold_date : hold_date, status : status, stage : stage, customer_id : customer_id, user_id : user_id, csrf_token},
+                data: {hold_remark : hold_remark, hold_date : hold_date, customer_id : customer_id, user_id : user_id, csrf_token},
                 dataType : 'json', 
                 success : function(response) {
                     if(response.msg){
                         $('#reson').empty();
                         catchSuccess(response.msg);
-                        window.location.reload();
+                        history.back(1);
                     }else{
                         catchError(response.err);
                     }
@@ -499,7 +499,7 @@
                     } else if(response.msg){
                         $('#reson').empty();
                         catchSuccess(response.msg);
-                        window.location.href='<?= base_url("applicationRecommend/S10") ?>';
+                        history.back(1);
                     }else{
                         catchError(response.err);
                     }
@@ -532,7 +532,7 @@
                     } else if(response.msg){
                         $('#reson').empty();
                         catchSuccess(response.msg);
-                        window.location.href='<?= base_url("applicationRecommend/S10") ?>';
+                        history.back(1);
                     } else{
                         catchError(response.err);
                     }
@@ -566,6 +566,7 @@
 
     function disbursalDetails(lead_id, customer_id, user_id)
     {
+        $('#div1disbursalBank, #disbursalBank, #div1UpdateReferenceNo, #divUpdateReferenceNo').show();
         $.ajax({
             url : '<?= base_url("getSanctionDetails") ?>',
             type : 'POST',
@@ -584,7 +585,7 @@
                     html += '<tr><th class="thbg">Disbursal Email Delivery status</th><td>'+ ((res.loanAgreementRequest == 1) ? "Sended" : 'Pending') +'</td><th class="thbg">Disbursal Email Response status</th><td>'+ ((res.loanAgreementResponse == 1) ? "Accepted" : '-') +'</td></tr>';
                     html += '<tr><th class="thbg">Disbursal Email Response IP</th><td>'+ ((res.agrementUserIP)?res.agrementUserIP : "-") +'</td><th class="thbg">Acceptance Email</th><td>'+ ((res.loanAgreementResponse == 1) ? res.email : '-') +'</td></tr>';
 
-                    if(typeof res.loan_status !== 'undefined' && typeof res.loan_status != 'DISBURSED')
+                    if(typeof res.loan_status !== 'undefined' && typeof res.loan_status != 'DISBURSED-PENDING')
                     {
                         <?php if(agent == "DS1"){ ?>
                             html += '<tr><th class="thbg">Resend Disbursal Email</th><td colspan="4"><input type="checkbox" name="resendAgreementLetter" id="resendAgreementLetter" onclick="resendAgreementLetter('+ lead_id  +', '+ user_id +')"></td></tr>';
@@ -593,6 +594,7 @@
                             html += '<tr><th class="thbg">MOP</th><td>'+ ((res.mode_of_payment)?res.mode_of_payment : "-") +'</td><th class="thbg">Disbursal Reference No.</th><td colspan="4">'+ ((res.disburse_refrence_no) ? res.disburse_refrence_no : '-') +'</td></tr>';
                         <?php } ?>
                     } else {
+                        // $('#div1disbursalBank, #disbursalBank, #div1UpdateReferenceNo, #divUpdateReferenceNo').hide();
                         html += '<tr><th class="thbg">Payable Account</th><td>'+ ((res.company_ac_no)?res.company_ac_no : "-") +'</td><th class="thbg">Channel</th><td>'+ ((res.channel) ? res.channel : '-') +'</td></tr>';
                         html += '<tr><th class="thbg">MOP</th><td>'+ ((res.mode_of_payment)?res.mode_of_payment : "-") +'</td><th class="thbg">Disbursal Reference No.</th><td colspan="4">'+ ((res.disburse_refrence_no) ? res.disburse_refrence_no : '-') +'</td></tr>';
                     }
@@ -602,17 +604,15 @@
                         $('#div1disbursalBank, #disbursalBank, #div1UpdateReferenceNo, #divUpdateReferenceNo').hide();
                     } else if(typeof res.loan_status !== 'undefined' && typeof loan_status == 'DISBURSE-PENDING'){
                         $('#resendAgreementLetter').prop('disabled', true);
-                        $('#disbursalBank').show();
-                        $('#divUpdateReferenceNo').hide();
+                        $('#div1disbursalBank, #disbursalBank').show();
+                        $('#div1UpdateReferenceNo, #divUpdateReferenceNo').hide();
                     } else if(typeof res.loan_status !== 'undefined' && typeof loan_status == 'DISBURSED' && res.disburse_refrence_no == ''){
                         $('#resendAgreementLetter').prop('disabled', true);
-                        $('#divUpdateReferenceNo').show();
-                        $('#disbursalBank').hide();
+                        $('#div1UpdateReferenceNo, #divUpdateReferenceNo').show();
+                        $('div1disbursalBank, #disbursalBank').hide();
                     } else {
                         $('#div1disbursalBank, #disbursalBank, #div1UpdateReferenceNo, #divUpdateReferenceNo').hide();
                     }
-
-                    'DISBURSE-PENDING','DISBURSED'
                 $('#ViewDisbursalDetails').html(html);
             }
         });
@@ -699,7 +699,7 @@
                     window.location.href = "<?= base_url() ?>";
                 } else if(response.msg){
                     catchSuccess(response.msg);
-                    window.location.href = "<?= base_url('collection/S14') ?>";
+                    history.back(1);
                 }else{
                     catchError(response.err);
                 }
@@ -742,7 +742,7 @@
                     window.location.href = "<?= base_url() ?>";
                 } else if(response.msg){
                     catchSuccess(response.msg);
-                    window.location.href = "<?= base_url('applicationinprocess/S5') ?>";
+                    history.back(1);
                 }else{
                     catchError(response.err);
                 }
@@ -1613,7 +1613,8 @@
                         catchNotification(response.notification);
                     } else if(response.msg){
                         catchSuccess(response.msg);
-                        window.location.reload();
+                        // window.location.reload();
+                        history.back(1);
                     }else{
                         catchError(response.err);
                     }
@@ -1626,7 +1627,6 @@
 
         $('#formUpdateReferenceNo').submit(function(e) {
             e.preventDefault();
-
             $.ajax({
                 url : '<?= base_url("UpdateDisburseReferenceNo") ?>',
                 type : 'POST',
@@ -1639,16 +1639,17 @@
                     $('#updateReferenceNo').html('<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>Processing...');
                 },
                 success : function(response) {
-                    if(response.msg) {
+                    if(response.errSession) {
+                        window.location.href="<?= base_url() ?>";
+                    } else if(response.msg) {
                         catchSuccess(response.msg);
-                        window.location.reload();
+                        history.back(1);
                     } else {
                         catchError(response.err);
                     }
                 },
                 complete: function() {
                     $('#updateReferenceNo').html('Update Reference');
-                    // .removeClass('disabled'); 
                 },
             });   
         });
@@ -1921,15 +1922,15 @@
             });
         });
 
-        $("#allowDisbursalBank").on('click',function(e) {
-            var FormData = $("#verifyDisbursalBank").serialize();
+        $("#allowDisbursalToBank").on('click',function(e) {
+            var FormData = $("#disbursalPayableDetails").serialize();
             $.ajax({
-                url : '<?= base_url("verifyDisbursalBank") ?>',
+                url : '<?= base_url("allowDisbursalToBank") ?>',
                 type : 'POST',
                 data : FormData,
                 dataType : "json",
                 beforeSend: function() {
-                    $('#allowDisbursalBank').html('<span class="spinner-border spinner-border-sm mr-2" role="status"></span>Processing...').prop('disabled', true);
+                    $('#allowDisbursalToBank').html('<span class="spinner-border spinner-border-sm mr-2" role="status"></span>Processing...').prop('disabled', true);
                 },
                 success : function(response){
                     if(response.msg){
@@ -1941,32 +1942,33 @@
                     }
                 },
                 complete: function() {
-                    $('#allowDisbursalBank').html('Save').prop('disabled', false);
+                    $('#allowDisbursalToBank').html('Save').prop('disabled', false);
                 },
             });
         });
 
-        $("#allowDisbursalToBank").on('click',function(e) {
-            var FormData = $("#disbursalPayableDetails").serialize();
+        $("#formUpdateReferenceNo").on('submit',function(e) {
+            var FormData = $("#formUpdateReferenceNo").serialize();
             $.ajax({
-                url : '<?= base_url("allowDisbursalToBank") ?>',
+                url : '<?= base_url("UpdateDisburseReferenceNo") ?>',
                 type : 'POST',
                 data : FormData,
                 dataType : "json",
                 beforeSend: function() {
-                    $('#allowDisbursalBank').html('<span class="spinner-border spinner-border-sm mr-2" role="status"></span>Processing...').prop('disabled', true);
+                    $('#updateReferenceNo').html('<span class="spinner-border spinner-border-sm mr-2" role="status"></span>Processing...').prop('disabled', true);
                 },
                 success : function(response){
-                    if(response.msg){
-                        getCustomerBanking($('#customer_id').val());
-                        $("#disbursalPayableDetails")[0].reset();
+                    if(response.errSession) {
+                        window.location.href="<?= base_url() ?>";
+                    } else if(response.msg) {
                         catchSuccess(response.msg);
+                        history.back(1);
                     }else{
                         catchError(response.err);
                     }
                 },
                 complete: function() {
-                    $('#allowDisbursalBank').html('Save').prop('disabled', false);
+                    $('#updateReferenceNo').html('Update Reference').prop('disabled', false);
                 },
             });
         });

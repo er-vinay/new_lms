@@ -16,6 +16,7 @@
                 <form id="disbursalPayableDetails" class="form-inline" method="post" enctype="multipart/form-data">
                     <input type="hidden" class="form-control" name="lead_id" id="lead_id" readonly>
                     <input type="hidden" class="form-control" name="company_id" id="company_id" value="<?= company_id ?>" readonly>
+                    <input type="hidden" name="customer_id" id="customer_id" value="<?php echo $leadDetails->customer_id; ?>" />
                     <input type="hidden" class="form-control" name="product_id" id="product_id" value="<?= product_id ?>" readonly>
                     <input type="hidden" class="form-control" name="user_id" id="user_id" value="<?= user_id ?>" readonly>
                     <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>" />
@@ -53,7 +54,7 @@
             <div class="form-group" id="divbtnDisburse" style="float:left; width:100%; margin-bottom: 0px;">
                 <div calss="row" style="border-top: solid 1px #ddd;text-align: center; padding-top : 20px; padding-bottom: 20px; background: #f3f3f3;">
                     <div calss="col-md-12 text-center">
-                        <button class="btn btn-primary" id="updateDisbursalApprove" style="text-align: center; padding-left: 50px; padding-right: 50px; font-weight: bold;">Disburse</button>
+                        <button class="btn btn-primary" id="allowDisbursalToBank" style="text-align: center; padding-left: 50px; padding-right: 50px; font-weight: bold;">Disburse</button>
                     </div>
                 </div>
             </div>
@@ -71,6 +72,7 @@
                 <form id="formUpdateReferenceNo" method="post" enctype="multipart/form-data">
                     <input type="hidden" class="form-control" name="lead_id" id="lead_id" readonly>
                     <input type="hidden" class="form-control" name="company_id" id="company_id" value="<?= company_id ?>" readonly>
+                    <input type="hidden" name="customer_id" id="customer_id" value="<?php echo $leadDetails->customer_id; ?>" />
                     <input type="hidden" class="form-control" name="product_id" id="product_id" value="<?= product_id ?>" readonly>
                     <input type="hidden" class="form-control" name="user_id" id="user_id" value="<?= user_id ?>" readonly>
                     <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>" />

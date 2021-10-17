@@ -1,5 +1,5 @@
 
-    <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S11")) { ?>
+    <?php if((agent == "CR2" || agent == "CA" || agent == "SA") && ($leadDetails->stage == "S5" || $leadDetails->stage == "S6" || $leadDetails->stage == "S11")) { ?>
         <form id="FormSaveCAM" class="form-inline" method="post" autocomplete="off">
             <p>&nbsp</p>
             <input type="hidden" name="lead_id" id="lead_id" value="<?php echo $leadDetails->lead_id; ?>" />

@@ -4874,3 +4874,242 @@ INFO - 2021-10-16 14:44:26 --> CSRF cookie sent
 INFO - 2021-10-16 14:44:26 --> Input Class Initialized
 INFO - 2021-10-16 14:44:26 --> Language Class Initialized
 ERROR - 2021-10-16 14:44:26 --> 404 Page Not Found: Public/front
+INFO - 2021-10-16 15:07:48 --> Config Class Initialized
+INFO - 2021-10-16 15:07:48 --> Hooks Class Initialized
+DEBUG - 2021-10-16 15:07:48 --> UTF-8 Support Enabled
+INFO - 2021-10-16 15:07:48 --> Utf8 Class Initialized
+INFO - 2021-10-16 15:07:48 --> URI Class Initialized
+DEBUG - 2021-10-16 15:07:48 --> No URI present. Default controller set.
+INFO - 2021-10-16 15:07:48 --> Router Class Initialized
+INFO - 2021-10-16 15:07:48 --> Output Class Initialized
+INFO - 2021-10-16 15:07:48 --> Security Class Initialized
+DEBUG - 2021-10-16 15:07:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 15:07:48 --> CSRF cookie sent
+INFO - 2021-10-16 15:07:48 --> Input Class Initialized
+INFO - 2021-10-16 15:07:48 --> Language Class Initialized
+INFO - 2021-10-16 15:07:48 --> Loader Class Initialized
+INFO - 2021-10-16 15:07:48 --> Helper loaded: url_helper
+INFO - 2021-10-16 15:07:48 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 15:07:48 --> Helper loaded: form_helper
+INFO - 2021-10-16 15:07:48 --> Helper loaded: file_helper
+INFO - 2021-10-16 15:07:48 --> Helper loaded: download_helper
+INFO - 2021-10-16 15:07:48 --> Helper loaded: date_helper
+INFO - 2021-10-16 15:07:48 --> Helper loaded: security_helper
+INFO - 2021-10-16 15:07:48 --> Helper loaded: option_helper
+INFO - 2021-10-16 15:07:48 --> Database Driver Class Initialized
+DEBUG - 2021-10-16 15:07:48 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-10-16 15:07:48 --> Session: Class initialized using 'files' driver.
+INFO - 2021-10-16 15:07:48 --> Form Validation Class Initialized
+INFO - 2021-10-16 15:07:48 --> Upload Class Initialized
+INFO - 2021-10-16 15:07:48 --> Parser Class Initialized
+INFO - 2021-10-16 15:07:48 --> Email Class Initialized
+DEBUG - 2021-10-16 15:07:48 --> Encrypt Class Initialized
+INFO - 2021-10-16 15:07:48 --> Table Class Initialized
+INFO - 2021-10-16 15:07:48 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-10-16 15:07:48 --> Pagination Class Initialized
+INFO - 2021-10-16 15:07:48 --> Model "Leadmod" initialized
+INFO - 2021-10-16 15:07:48 --> Controller Class Initialized
+INFO - 2021-10-16 15:07:48 --> Model "Admin_Model" initialized
+ERROR - 2021-10-16 18:37:48 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 16
+ERROR - 2021-10-16 18:37:48 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 16
+ERROR - 2021-10-16 18:37:48 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 17
+ERROR - 2021-10-16 18:37:48 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 17
+ERROR - 2021-10-16 18:37:48 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 18
+ERROR - 2021-10-16 18:37:48 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 18
+ERROR - 2021-10-16 18:37:48 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 19
+ERROR - 2021-10-16 18:37:48 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 19
+INFO - 2021-10-16 18:37:48 --> Model "Task_Model" initialized
+INFO - 2021-10-16 18:37:48 --> Model "Menu_Model" initialized
+INFO - 2021-10-16 18:37:48 --> Model "User_Model" initialized
+INFO - 2021-10-16 18:37:48 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\login.php
+INFO - 2021-10-16 18:37:48 --> Final output sent to browser
+DEBUG - 2021-10-16 18:37:48 --> Total execution time: 0.0363
+INFO - 2021-10-16 15:07:48 --> Config Class Initialized
+INFO - 2021-10-16 15:07:48 --> Hooks Class Initialized
+DEBUG - 2021-10-16 15:07:48 --> UTF-8 Support Enabled
+INFO - 2021-10-16 15:07:48 --> Utf8 Class Initialized
+INFO - 2021-10-16 15:07:48 --> URI Class Initialized
+INFO - 2021-10-16 15:07:48 --> Router Class Initialized
+INFO - 2021-10-16 15:07:48 --> Output Class Initialized
+INFO - 2021-10-16 15:07:48 --> Security Class Initialized
+DEBUG - 2021-10-16 15:07:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 15:07:48 --> CSRF cookie sent
+INFO - 2021-10-16 15:07:48 --> Input Class Initialized
+INFO - 2021-10-16 15:07:48 --> Language Class Initialized
+ERROR - 2021-10-16 15:07:48 --> 404 Page Not Found: Public/front
+INFO - 2021-10-16 15:07:51 --> Config Class Initialized
+INFO - 2021-10-16 15:07:51 --> Hooks Class Initialized
+DEBUG - 2021-10-16 15:07:51 --> UTF-8 Support Enabled
+INFO - 2021-10-16 15:07:51 --> Utf8 Class Initialized
+INFO - 2021-10-16 15:07:51 --> URI Class Initialized
+INFO - 2021-10-16 15:07:51 --> Router Class Initialized
+INFO - 2021-10-16 15:07:51 --> Output Class Initialized
+INFO - 2021-10-16 15:07:51 --> Security Class Initialized
+DEBUG - 2021-10-16 15:07:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 15:07:51 --> CSRF cookie sent
+INFO - 2021-10-16 15:07:51 --> CSRF token verified
+INFO - 2021-10-16 15:07:51 --> Input Class Initialized
+INFO - 2021-10-16 15:07:51 --> Language Class Initialized
+INFO - 2021-10-16 15:07:51 --> Loader Class Initialized
+INFO - 2021-10-16 15:07:51 --> Helper loaded: url_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: form_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: file_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: download_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: date_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: security_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: option_helper
+INFO - 2021-10-16 15:07:51 --> Database Driver Class Initialized
+DEBUG - 2021-10-16 15:07:51 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-10-16 15:07:51 --> Session: Class initialized using 'files' driver.
+INFO - 2021-10-16 15:07:51 --> Form Validation Class Initialized
+INFO - 2021-10-16 15:07:51 --> Upload Class Initialized
+INFO - 2021-10-16 15:07:51 --> Parser Class Initialized
+INFO - 2021-10-16 15:07:51 --> Email Class Initialized
+DEBUG - 2021-10-16 15:07:51 --> Encrypt Class Initialized
+INFO - 2021-10-16 15:07:51 --> Table Class Initialized
+INFO - 2021-10-16 15:07:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-10-16 15:07:51 --> Pagination Class Initialized
+INFO - 2021-10-16 15:07:51 --> Model "Leadmod" initialized
+INFO - 2021-10-16 15:07:51 --> Controller Class Initialized
+INFO - 2021-10-16 15:07:51 --> Model "Admin_Model" initialized
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 16
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 16
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 17
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 17
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 18
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 18
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined array key "isUserSession" E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 19
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\models\Task_Model.php 19
+INFO - 2021-10-16 18:37:51 --> Model "Task_Model" initialized
+INFO - 2021-10-16 18:37:51 --> Model "Menu_Model" initialized
+INFO - 2021-10-16 18:37:51 --> Model "User_Model" initialized
+INFO - 2021-10-16 18:37:51 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2021-10-16 15:07:51 --> Config Class Initialized
+INFO - 2021-10-16 15:07:51 --> Hooks Class Initialized
+DEBUG - 2021-10-16 15:07:51 --> UTF-8 Support Enabled
+INFO - 2021-10-16 15:07:51 --> Utf8 Class Initialized
+INFO - 2021-10-16 15:07:51 --> URI Class Initialized
+INFO - 2021-10-16 15:07:51 --> Router Class Initialized
+INFO - 2021-10-16 15:07:51 --> Output Class Initialized
+INFO - 2021-10-16 15:07:51 --> Security Class Initialized
+DEBUG - 2021-10-16 15:07:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 15:07:51 --> CSRF cookie sent
+INFO - 2021-10-16 15:07:51 --> Input Class Initialized
+INFO - 2021-10-16 15:07:51 --> Language Class Initialized
+INFO - 2021-10-16 15:07:51 --> Loader Class Initialized
+INFO - 2021-10-16 15:07:51 --> Helper loaded: url_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: form_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: file_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: download_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: date_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: security_helper
+INFO - 2021-10-16 15:07:51 --> Helper loaded: option_helper
+INFO - 2021-10-16 15:07:51 --> Database Driver Class Initialized
+DEBUG - 2021-10-16 15:07:51 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-10-16 15:07:51 --> Session: Class initialized using 'files' driver.
+INFO - 2021-10-16 15:07:51 --> Form Validation Class Initialized
+INFO - 2021-10-16 15:07:51 --> Upload Class Initialized
+INFO - 2021-10-16 15:07:51 --> Parser Class Initialized
+INFO - 2021-10-16 15:07:51 --> Email Class Initialized
+DEBUG - 2021-10-16 15:07:51 --> Encrypt Class Initialized
+INFO - 2021-10-16 15:07:51 --> Table Class Initialized
+INFO - 2021-10-16 15:07:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-10-16 15:07:51 --> Pagination Class Initialized
+INFO - 2021-10-16 15:07:51 --> Model "Leadmod" initialized
+INFO - 2021-10-16 15:07:51 --> Controller Class Initialized
+INFO - 2021-10-16 15:07:51 --> Model "Admin_Model" initialized
+INFO - 2021-10-16 18:37:51 --> Model "Task_Model" initialized
+INFO - 2021-10-16 18:37:51 --> Model "Menu_Model" initialized
+INFO - 2021-10-16 18:37:51 --> Model "User_Model" initialized
+INFO - 2021-10-16 18:37:51 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\Layouts/header.php
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Undefined variable $totalCounts E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+ERROR - 2021-10-16 18:37:51 --> Severity: Warning --> Trying to access array offset on value of type null E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php 41
+INFO - 2021-10-16 18:37:51 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\Layouts/footer.php
+INFO - 2021-10-16 18:37:51 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\home.php
+INFO - 2021-10-16 18:37:51 --> Final output sent to browser
+DEBUG - 2021-10-16 18:37:51 --> Total execution time: 0.0594
+INFO - 2021-10-16 15:07:55 --> Config Class Initialized
+INFO - 2021-10-16 15:07:55 --> Hooks Class Initialized
+DEBUG - 2021-10-16 15:07:55 --> UTF-8 Support Enabled
+INFO - 2021-10-16 15:07:55 --> Utf8 Class Initialized
+INFO - 2021-10-16 15:07:55 --> URI Class Initialized
+INFO - 2021-10-16 15:07:55 --> Router Class Initialized
+INFO - 2021-10-16 15:07:55 --> Output Class Initialized
+INFO - 2021-10-16 15:07:55 --> Security Class Initialized
+DEBUG - 2021-10-16 15:07:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-10-16 15:07:55 --> CSRF cookie sent
+INFO - 2021-10-16 15:07:55 --> Input Class Initialized
+INFO - 2021-10-16 15:07:55 --> Language Class Initialized
+INFO - 2021-10-16 15:07:55 --> Loader Class Initialized
+INFO - 2021-10-16 15:07:55 --> Helper loaded: url_helper
+INFO - 2021-10-16 15:07:55 --> Helper loaded: cookie_helper
+INFO - 2021-10-16 15:07:55 --> Helper loaded: form_helper
+INFO - 2021-10-16 15:07:55 --> Helper loaded: file_helper
+INFO - 2021-10-16 15:07:55 --> Helper loaded: download_helper
+INFO - 2021-10-16 15:07:55 --> Helper loaded: date_helper
+INFO - 2021-10-16 15:07:55 --> Helper loaded: security_helper
+INFO - 2021-10-16 15:07:55 --> Helper loaded: option_helper
+INFO - 2021-10-16 15:07:55 --> Database Driver Class Initialized
+DEBUG - 2021-10-16 15:07:55 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-10-16 15:07:55 --> Session: Class initialized using 'files' driver.
+INFO - 2021-10-16 15:07:55 --> Form Validation Class Initialized
+INFO - 2021-10-16 15:07:55 --> Upload Class Initialized
+INFO - 2021-10-16 15:07:55 --> Parser Class Initialized
+INFO - 2021-10-16 15:07:55 --> Email Class Initialized
+DEBUG - 2021-10-16 15:07:55 --> Encrypt Class Initialized
+INFO - 2021-10-16 15:07:55 --> Table Class Initialized
+INFO - 2021-10-16 15:07:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-10-16 15:07:55 --> Pagination Class Initialized
+INFO - 2021-10-16 15:07:55 --> Model "Leadmod" initialized
+INFO - 2021-10-16 15:07:55 --> Controller Class Initialized
+INFO - 2021-10-16 15:07:55 --> Model "Leadmod" initialized
+INFO - 2021-10-16 18:37:55 --> Model "Task_Model" initialized
+INFO - 2021-10-16 18:37:55 --> Model "Admin_Model" initialized
+INFO - 2021-10-16 18:37:55 --> Model "Status_Model" initialized
+INFO - 2021-10-16 18:37:55 --> Model "CAM_Model" initialized
+INFO - 2021-10-16 18:37:55 --> Model "Docs_Model" initialized
+INFO - 2021-10-16 18:37:55 --> Model "Email_Model" initialized
+INFO - 2021-10-16 18:37:55 --> Model "SMS_Model" initialized
+INFO - 2021-10-16 18:37:55 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\Layouts/header.php
+INFO - 2021-10-16 18:37:55 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\Layouts/footer.php
+ERROR - 2021-10-16 18:37:55 --> Severity: Warning --> Undefined property: CI_DB_mysqli_result::$lead_id E:\VIN\xampp\htdocs\2021\new_lms\application\views\Tasks\main_js.php 110
+ERROR - 2021-10-16 18:37:55 --> Severity: Warning --> Undefined property: CI_DB_mysqli_result::$loan_amount E:\VIN\xampp\htdocs\2021\new_lms\application\views\Tasks\main_js.php 1247
+ERROR - 2021-10-16 18:37:55 --> Severity: Warning --> Undefined property: CI_DB_mysqli_result::$cibil E:\VIN\xampp\htdocs\2021\new_lms\application\views\Tasks\main_js.php 1267
+ERROR - 2021-10-16 18:37:55 --> Severity: Warning --> Undefined property: CI_DB_mysqli_result::$monthly_income E:\VIN\xampp\htdocs\2021\new_lms\application\views\Tasks\main_js.php 1275
+ERROR - 2021-10-16 18:37:55 --> Severity: Warning --> Undefined property: CI_DB_mysqli_result::$obligations E:\VIN\xampp\htdocs\2021\new_lms\application\views\Tasks\main_js.php 1275
+INFO - 2021-10-16 18:37:55 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\Tasks/main_js.php
+INFO - 2021-10-16 18:37:55 --> File loaded: E:\VIN\xampp\htdocs\2021\new_lms\application\views\Tasks/GetLeadTaskList.php
+INFO - 2021-10-16 18:37:55 --> Final output sent to browser
+DEBUG - 2021-10-16 18:37:55 --> Total execution time: 0.0416

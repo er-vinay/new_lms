@@ -556,6 +556,7 @@
 			{
 				$json['errSession'] = 'Session Expired';
 				json_encode($json);
+				return false;
 			}
 			if ($this->input->server('REQUEST_METHOD') == 'POST') 
 	        {
@@ -570,10 +571,11 @@
 	        	if($this->form_validation->run() == FALSE) {
 	        		$json['err'] = validation_errors();
 	        		echo json_encode($json);
+	        		return false;
 	        	}
 	        	else
 	        	{
-	        	    $status = 'DISBURSE';
+	        	    $status = 'DISBURSE-PENDING';
 	        		$lead_id = $this->input->post('lead_id');
 	        		$disbursal_date = $this->input->post('disbursal_date');
 
@@ -584,11 +586,12 @@
 	        		$db_disbursal_date = date("d-m-Y", strtotime($camDetails->disbursal_date));
 	        		$input_disbursal_date = date("d-m-Y", strtotime($disbursal_date));
 
-	        		include ("CAMController.php");
-	        		$obj_CAM = new CAMController();
+	        		$conditions2 = ['lead_id' => $lead_id];
 
 	        		if($input_disbursal_date != $db_disbursal_date)
 	        		{
+		        		include ("CAMController.php");
+		        		$obj_CAM = new CAMController();
 	        			$Arr_input = [
 	        				'loan_recommended' 			=> $camDetails->loan_recommended,
 	        				'roi' 						=> $camDetails->roi,
@@ -605,7 +608,8 @@
 	        				'total_admin_fee' 		=> $calcAmount->total_admin_fee,
 	        				'disbursal_date' 		=> $disbursal_date,
 	        			];
-	        			$result = $this->DM->updateDisburse($lead_id, $CamData);
+			// echo "if called : <pre>"; print_r($CamData); exit;
+	        			$result = $this->Tasks->updateLeads($conditions2, $CamData, 'credit_analysis_memo');
 	        		}
 	        		$data = [
 	        			'company_id' 			=> $this->input->post('company_id'),
@@ -616,32 +620,47 @@
 	        			'updated_by' 			=> $this->input->post('user_id'),
 	        			'updated_on' 			=> timestamp,
 	        		];
-	        		
-	        		$result = $this->DM->updateDisburse($lead_id, $data);
+			// echo "else called : <pre>"; print_r($data); exit;
+	        		$result = $this->Tasks->updateLeads($conditions2, $data, 'loan');
 	        		if($result == 1){
 		        		$json['msg'] = 'Disbursed Successfully.';
+	        			echo json_encode($json);
+	        			return true;
 		        	}else{
 		        		$json['err'] = 'Disbursed Failed. try again';
+	        			echo json_encode($json);
+	        			return false;
 		        	}
-	        		echo json_encode($json);
 	        	}
 	        }
 		}
 
-		public function PayAmountToCustomer($lead_id)
-		{
-			if(!empty($lead_id)) {
-				$data = array(
-	          		'status' 		=>"DISBURSED",
-	          	);
-	    		$result = $this->db->where('lead_id', $lead_id)->update('leads', $data);
-	    		$json = "Paid Successfully";
-	    		echo json_encode($json);
-	    	}
-		}
+		// public function PayAmountToCustomer($lead_id)
+		// {
+		// 	if(!empty($lead_id)) {
+		// 		$data = array(
+	 //          		'status' 		=>"DISBURSED",
+	 //          	);
+	 //    		$result = $this->db->where('lead_id', $lead_id)->update('leads', $data);
+	 //    		$json = "Paid Successfully";
+	 //    		echo json_encode($json);
+	 //    	}
+		// }
 
         public function UpdateDisburseReferenceNo()
 		{
+			if($this->input->post('user_id') == '')
+			{
+				$json['errSession'] = 'Session Expired';
+				json_encode($json);
+				return false;
+			}
+			if($this->input->post('customer_id') == '')
+			{
+				$json['err'] = 'Customer ID is required.';
+				json_encode($json);
+				return false;
+			}
 			if(isset($_FILES["file"]["name"]))  
 			{
             	$config['upload_path'] = realpath(FCPATH.'upload');
@@ -663,27 +682,39 @@
 					$image = $data['upload_data']['file_name'];
 
 	                $status = "DISBURSED";
+	                $stage = "S14";
 
-		            $data = array (
-		              //  'loan_no'       		=> $loan_no,
+		            $data = [
 		                'disburse_refrence_no' 	=> $loan_reference_no,
 		                'screenshot'        	=> $image,
 		                'status'        	    => $status,
 		                'updated_by'        	=> $user_id,
-		                'updated_on'    		=> updated_at
-		            );
+		                'updated_on'    		=> timestamp
+		            ];
+					$data2 = [
+						'lead_id' 		=> $lead_id,
+						'customer_id' 	=> $this->input->post('customer_id'),
+						'user_id' 		=> $this->input->post('user_id'),
+						'status' 		=> $status, 
+						"stage" 		=> $stage, 
+						'remarks' 		=> "DISBURSED",
+						'created_on'	=> timestamp
+					];
 	        		
-					$result1 = $this->Task_Model->updateLeads($lead_id, ['status' => $status]);
-    			    $result2 = $this->CAM->updateCAM($lead_id, ['status' => $status]);
-	        		$result3 = $this->DM->updateDisburse($lead_id, $data);
-	        		
+	        		$conditions = ['lead_id' => $lead_id];
+					$result1 = $this->Tasks->updateLeads($conditions, ['status' => $status, 'stage'=>$stage], 'leads');
+    			    $result2 = $this->Tasks->updateLeads($conditions, $data, 'loan');
+	        		$result3 = $this->Tasks->insert($data2, 'lead_followup');
 	        		
 	        		if($result1 == 1 && $result2 == 1 && $result3 == 1){
 		        		$json['msg'] = 'Loan Disbursed Successfully.';
+		        		echo json_encode($json);
+						return true;
 		        	}else{
 		        		$json['err'] = 'Failed to update Reference no, try again';
+			        	echo json_encode($json);
+						return false;
 		        	}
-		        	echo json_encode($json);
 				}   
 	        }
 		}
@@ -693,7 +724,7 @@
             if(!empty($lead_id))
             {
                 $fetchDisburse = 'D.customer_name, D.status, D.loanAgreementLetter';
-    			$queryDisburse = $this->Task_Model->getAgreementDetails($lead_id, $fetchDisburse);
+    			$queryDisburse = $this->Tasks->getAgreementDetails($lead_id, $fetchDisburse);
     			$data = $queryDisburse->row();
                 return $data;
             }

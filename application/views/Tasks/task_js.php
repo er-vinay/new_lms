@@ -91,7 +91,7 @@
                                 </div>
                             </div> 
 
-                            <div role="tabpanel" class="tab-pane fade in active" id="ApplicationSaction">
+                            <div role="tabpanel" class="tab-pane fade" id="ApplicationSaction">
                                 <div>
                                     <?php $this->load->view('Tasks/application'); ?>
                                 </div>
@@ -115,7 +115,7 @@
                                         <div class="row" id="docsform">
                                             <?php $this->load->view('Document/docs'); ?>
                                         </div> 
-                                    <?php } else { ?>
+                                    <?php } //else { ?>
                                         <div class="footer-support">
                                             <h2 class="footer-support" style="margin-top: 0px;">
                                                 <button type="button" class="btn btn-info collapse" onclick="getCustomerDocs(<?= $leadDetails->lead_id ?>, '<?= $leadDetails->customer_id ?>')" data-toggle="collapse" data-target="#Uploaded-Documents">Uploaded Documents&nbsp;<i class="fa fa-angle-double-down"></i></button>
@@ -124,7 +124,7 @@
                                         <div id="Uploaded-Documents" class="collapse" style="background: #fff !important;">
                                             <div id="docsHistory"></div>
                                         </div> 
-                                    <?php } ?>
+                                    <?php //} ?>
                                     </div> 
                                 </div>  
                             </div>
@@ -163,33 +163,6 @@
                                             } 
                                         ?>
                                     </div>
-
-                                    <?php if($_SESSION['isUserSession']['role'] == headCreditManager): ?>
-                                    <div id="btndivCamDetails">
-                                        <div calss="row" style="border-top: solid 1px #ddd;text-align: center; padding-top : 20px; padding-bottom: 20px; background: #f3f3f3;">
-                                            <div calss="col-md-12 text-center">
-                                                <button class="btn btn-success reject-button" onclick="RejectedLoan()" style="text-align: center; padding-left: 25px; padding-right: 25px; font-weight: bold;">Reject</button>
-                                                <button class="btn btn-primary" id="btnSendBack" style="text-align: center; padding-left: 25px; padding-right: 25px; font-weight: bold;">Send Back</button>
-                                                <button class="btn btn-success" id="btnCAM_Approve" style="background: #7cb342 !important; text-align: center; padding-left: 25px; padding-right: 25px; font-weight: bold;">Sanction</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="divExpendReason" class="marging-footer-verifa">
-                                        <div style="margin-top: 15px">
-                                            <div class="col-md-3 text-center">&nbsp;</div>
-                                            <div class="col-md-4 text-center">
-                                                <select class="js-select2 form-control inputField" name="resonForReject" id="resonForReject" autocomplete="off" style="float: right;width: 100% !important;height: 43px !important;">  
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2 text-left">
-                                             <button class="btn btn-primary" id="btnRejectApplication" onclick="ResonForRejectLoan()">Reject Application</button>
-                                            </div>
-                                            <div class="col-md-3 text-center">
-                                              &nbsp;
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <?php endif; ?>
                                 </div>
                             </div>
                             
@@ -223,13 +196,14 @@
                                 <div calss="row" style="border-top: solid 1px #ddd;text-align: center; padding-top : 20px; padding-bottom: 20px; background: #f3f3f3; overflow: auto;">
                                     <div class="col-md-12 text-center">
                                         <button class="btn btn-success reject-button" onclick="RejectedLoan()">Reject</button>
-                                        <?php if(agent == 'CR2') { ?>
+                                        <?php if(agent == 'CR1' || agent == 'CR2') { ?>
                                         <button class="btn btn-success lead-hold-button" onclick="holdLeadsRemark()">Hold</button>
                                         <button class="btn btn-success lead-sanction-button" onclick="leadRecommendation()" ?>Recommend</button>
                                         <?php } else if(agent == 'CR3'){ ?>
                                             <button class="btn btn-success" id="btn_send_back" onclick="leadSendBack('<?= $leadDetails->lead_id ?>', '<?= user_id ?>', '<?= $leadDetails->customer_id ?>')">Send Back</button>
+                                        <?php } if(agent == 'CR2' || agent == 'CR3'){ ?>
+                                            <button class="btn btn-primary lead-sanction-button" style="background : #0a5e90 !important;" onclick="sanctionleads('<?= $leadDetails->lead_id ?>', '<?= user_id ?>', '<?= $leadDetails->customer_id ?>')">Sanction</button>
                                         <?php } ?>
-                                        <button class="btn btn-primary lead-sanction-button" style="background : #0a5e90 !important;" onclick="sanctionleads('<?= $leadDetails->lead_id ?>', '<?= user_id ?>', '<?= $leadDetails->customer_id ?>')">Sanction</button>
                                     </div>
                                 </div>
                             </div>
